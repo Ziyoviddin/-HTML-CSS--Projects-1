@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <h1>Hello World</h1>
-    </head>
-    <body>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda aliquam itaque explicabo, labore iste similique veniam recusandae rem repudiandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo sed aut expedita recusandae alias.</p>
-    </body>
+<html>
+  <head>
+     <link rel="stylesheet" href="styles.css">
+     <title>Happy-World</title>
+  </head>
+  <body>
+    
+     <div class="container">
+       <header>
+          <h1 id="title" class="text-center">Happy World Survey Form</h1>
+     <p id="description" class="text-center">Please share your ideas to make the world to be better place.</p>
+       </header>
+       <form id="survey-form">
+         <div>
+           <label id="name-label" for="name" class="form-control">Name</label>
+           <input id="name" name="name" type="text" placeholder="Enter your name" required>
+         </div>
+         <div>
+           <label id="email-label" for="email" class="form-control">Email</label>
+           <input id="email" name="email" type="email" placeholder="Your email" required>
+         </div>
+         <div>
+           <label id="number-label" for="number" class="form-control">Age</label> 
+           <input id="number" type="number" placeholder="Age" min="10" max="150">
+         </div>
+         <div class="form-subs">
+           <p>Which role do you want to take to help the world?</p>
+           <select id="dropdown" name="role" class="form-control" required>
+             <option disabled selected value>Select your purpose</option>
+             <option value="volunter">Volunter</option>
+             <option value="green-lover">Green-Lover</option>
+             <option value="charity-lover">Social-Lover</option>
+           </select>
+         </div>
+         <div class="form-subs">
+           <p>How many hours do you want to spend a week?</p>
+           <input name="same-name" type="radio" value="1-5hours">
+           <label id="name-label" for="same-name">1-5 hours</label>
+           <input name="same-name" type="radio" value="5-10hours">
+           <label id="name-label" for="same-name">5-10 hours</label>
+           <input name="same-name" type="radio" value="10&morehours">
+           <label id="name-label" for="same-name">10&more hours</label>
+           
+         </div>
+         <div class="form-subs">
+           <p>Which continent do you want to participate in?</p>
+           <label><input value="asia" type="checkbox" class="input-checkbox">Asia</label>
+           <label><input value="europe" type="checkbox" class="input-checkbox">Europe</label>
+           <label><input value="SAmerica" type="checkbox" class="input-checkbox">South America</label>
+           <label><input value="NAmerica" type="checkbox" class="input-checkbox">North America</label>
+           <label><input value="australia" type="checkbox" class="input-checkbox">Australia</label>
+           <label><input value="africa" type="checkbox" class="input-checkbox">Africa</label>
+         </div>
+         <div class="form-subs">
+           <p>Share your idea to improve our comunity.</p>
+           <textarea id="comments" name="comment" value="textarea" class="comment-place" placeholder="Write your opinions here"></textarea>
+         </div>
+         <div class="form-subs">
+           <button id="submit" type="submit">Submit</button>
+         </div>
+        
+       </form>
+     </div>
+
+  </body>
 </html>
