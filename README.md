@@ -1,1 +1,2 @@
-README file for RWD project
+#Responsive Web Design
+README file for RWD project.
