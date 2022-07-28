@@ -1,6 +1,3 @@
-# Responsive Web Design
-README file for RWD project.
+# Survey Form 
+Only HTML and CSS were used to develop this project. 
 
-# subtitle 
-
-Html css and javascript are boosting web world!
