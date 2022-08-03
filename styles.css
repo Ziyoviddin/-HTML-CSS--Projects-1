@@ -8,11 +8,13 @@ body{
   .container{
     width: 100%;
     margin:3.125rem auto 0 auto;
+    
   }
   form{
     background-color:#191970;
     width:70%;
-    margin: 0 auto;  
+    margin: 0 auto; 
+    border-radius: 0.3em; 
   }
   label {
       display: flex;
@@ -41,6 +43,10 @@ body{
   }
   
   #name-label{
+     display: inline-block;
+    
+  }
+  #name-label-ex{
     padding-left:10%;
     padding-top:15px;
   }
@@ -77,8 +83,16 @@ body{
     border-radius: 0.25rem;
   }
   #submit {
-     display: block;
+     
       width: 80%;
       border-radius: 0.25rem;
       background-color:green;
+      margin-bottom: 50px;
+      padding-bottom: 7.5px;
+      padding-top: 7.5px;
+      
       }
+   .bottom-space{
+    margin: 110px auto;
+   }   
+
